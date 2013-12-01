@@ -25,3 +25,26 @@ TARGET_KERNEL_CONFIG := cyanogenmod_p3100_defconfig
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := p3100,GT-P3100,espressorf,espressorfxx
+
+
+# RECOVERY STARTS HERE
+# TWRP-Flaggs
+DEVICE_RESOLUTION := 1024x600
+
+# need since CM10.2
+HAVE_SELINUX := true
+
+# storage handle
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+
+# cosmetic things
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+
+# flash handle of files bigger then RAM
+TW_FLASH_FROM_STORAGE := true

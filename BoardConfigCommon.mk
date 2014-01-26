@@ -44,6 +44,12 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 4096
 
+# TI Enhancement Settings
+BOARD_USE_TI_ENHANCED_DOMX := true
+
+# Hardware tunables
+BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+
 # Egl
 BOARD_EGL_CFG := device/samsung/p3100/configs/egl.cfg
 USE_OPENGL_RENDERER := true

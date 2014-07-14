@@ -14,18 +14,12 @@
 # limitations under the License.
 #
 
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Release name
-PRODUCT_RELEASE_NAME := p3100
+PRODUCT_NAME := p3100
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
 TARGET_SCREEN_WIDTH := 600
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p3100/full_p3100.mk)
